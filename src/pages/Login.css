@@ -6,17 +6,17 @@
 
 
 
-div {
+div#login-div {
     width: 550px;
     height: 250px;
     left: 50%;
     top: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
     --form-border-width: 15px;
 }
 
-form {
+form#login-form {
     border-width: var(--form-border-width);
     border-style: double;
     border-color: #200;
@@ -40,7 +40,20 @@ button {
     width: stretch;
     text-align: center;
     font-weight: bolder;
-    background-color: orangered;
     border-width: 5px;
     border-style: outset;
+}
+
+button#login {
+    background-color: orangered;
+}
+
+button#create-account {
+    background-color: chartreuse;
+    color: darkgreen;
+}
+
+button#forgot-login {
+    background-color: skyblue;
+    color: darkslateblue;
 }

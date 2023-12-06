@@ -1,15 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({ logout }) {
     return (
         <nav className="navigation">
             <NavLink
-                to="/login"
+                to="/"
                 className="nav-link"
             >
-                Logout
+                Home
             </NavLink>
+            <button onClick={logout}>Logout</button>
         </nav>
     );
 }
