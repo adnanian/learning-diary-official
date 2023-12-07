@@ -17,6 +17,10 @@ function Login() {
         loginNavigate.createAccount();
     }
 
+    function navigateToForgottenPasswordPage() {
+        loginNavigate.forgotPassword();
+    }
+
     return (
         <main>
             <div id="login-div">
@@ -39,8 +43,8 @@ function Login() {
                     /><br /><br />
                     <button id="login" type="submit">Login</button><br/><br/>
                 </form>
-                <button id="create-account" onClick={viewRegistrationForm}>Create Account</button><br/><br/>
-                <button id="forgot-login">Forgot Password?</button>
+                <button id="create-account" onClick={viewRegistrationForm}>Create Account</button><br/>
+                <button id="forgot-login" onClick={navigateToForgottenPasswordPage}>Forgot Password?</button>
             </div>
         </main>
     );

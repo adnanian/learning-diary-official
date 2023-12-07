@@ -14,6 +14,7 @@ function App() {
   const loginNavigate = {
     login: () => setIsLoggedIn(true),
     createAccount: () => setLoggedOutPage("/register"),
+    forgotPassword: () => setLoggedOutPage("/forgot-password"),
     returnToLogin: () => setLoggedOutPage("/login")
   }
 
