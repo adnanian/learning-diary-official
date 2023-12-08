@@ -10,6 +10,18 @@ function NavBar({ logout }) {
             >
                 Home
             </NavLink>
+            <NavLink
+                to="/notes"
+                className="nav-link"
+            >
+                Notes
+            </NavLink>
+            <NavLink
+                to="/about"
+                className="nav-link"
+            >
+                About
+            </NavLink>
             <button onClick={logout}>Logout</button>
         </nav>
     );
