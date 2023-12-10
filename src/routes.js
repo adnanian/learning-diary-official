@@ -1,11 +1,11 @@
 import App from "./App.js";
-import CreateAccount from "./pages/CreateAccount.js";
 import ErrorPage from "./pages/ErrorPage";
-import ForgotPassword from "./pages/ForgotPassword.js";
 import Home from "./pages/Home.js";
 import Notes from "./pages/Notes.js";
 import About from "./pages/About.js";
 import Login from "./pages/Login.js";
+import CreateAccount from "./pages/CreateAccount.js";
+import ForgotPassword from "./pages/ForgotPassword.js";
 
 const routes = [
     {

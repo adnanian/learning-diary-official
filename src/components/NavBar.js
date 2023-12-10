@@ -22,7 +22,12 @@ function NavBar({ logout }) {
             >
                 About
             </NavLink>
-            <button onClick={logout}>Logout</button>
+            <button 
+                onClick={logout}
+                className="nav-link"
+            >
+                Logout
+            </button>
         </nav>
     );
 }

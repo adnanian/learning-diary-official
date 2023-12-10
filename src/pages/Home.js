@@ -1,19 +1,19 @@
-import { useState, useEffect} from "react";
+//import { useState, useEffect} from "react";
 
 function Home() {
-    useEffect(() => {
-        fetch('http://localhost:3000/reflectionQuestions')
-            .then((response) => response.json())
-            .then((data) => setReflectionQuestions(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('http://localhost:3000/reflectionQuestions')
+    //         .then((response) => response.json())
+    //         .then((data) => setReflectionQuestions(data));
+    // }, []);
 
 
-    const [reflectionQuestions, setReflectionQuestions] = useState([]);
+    // const [reflectionQuestions, setReflectionQuestions] = useState([]);
 
-    function addReflectionQuestion(newReflection) {
-        setReflectionQuestions([...reflectionQuestions, newReflection]);
-        console.log(`Reflection question #${newReflection.id} successfully added to the server!`);
-    }
+    // function addReflectionQuestion(newReflection) {
+    //     setReflectionQuestions([...reflectionQuestions, newReflection]);
+    //     console.log(`Reflection question #${newReflection.id} successfully added to the server!`);
+    // }
 
     return (
         <div>

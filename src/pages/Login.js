@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
-import './Login.css';
+import '../page-stylesheets/Login.css'
 
 function Login() {
     const loginNavigate = useOutletContext();
@@ -10,6 +10,7 @@ function Login() {
 
     function handleLogin(event) {
         event.preventDefault();
+        console.log(loginNavigate.login);
         loginNavigate.login();
     }
 
@@ -25,26 +26,40 @@ function Login() {
         <main>
             <div id="login-div">
                 <form id="login-form" onSubmit={handleLogin}>
-                    <label htmlFor="username">Username / Email</label><br />
+                    <label htmlFor="username" className="login-label">Username / Email</label><br />
                     <input
                         id="username"
+                        className="login-credentials"
                         name="username"
                         type="text"
                         value={username}
                         onChange={(event) => setUsername(event.target.value)}
                     /><br />
-                    <label htmlFor="password">Password</label><br />
+                    <label htmlFor="password" className="login-label">Password</label><br />
                     <input
                         id="password"
+                        className="login-credentials"
                         name="password"
                         type="password"
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     /><br /><br />
-                    <button id="login" type="submit">Login</button><br/><br/>
+                    <button id="login" className="stretch-button" type="submit">Login</button><br/><br/>
                 </form>
-                <button id="create-account" onClick={viewRegistrationForm}>Create Account</button><br/>
-                <button id="forgot-login" onClick={navigateToForgottenPasswordPage}>Forgot Password?</button>
+                <button 
+                    id="create-account" 
+                    className="stretch-button"
+                    onClick={viewRegistrationForm}
+                >
+                    Create Account
+                </button><br/>
+                <button 
+                    id="forgot-login" 
+                    className="stretch-button"
+                    onClick={navigateToForgottenPasswordPage}
+                >
+                    Forgot Password?
+                </button>
             </div>
         </main>
     );

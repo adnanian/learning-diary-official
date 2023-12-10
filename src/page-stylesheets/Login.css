@@ -25,18 +25,18 @@ form#login-form {
     padding: 5px;
 }
 
-label {
+.login-label {
     font-weight: bold;
 }
 
-input {
+.login-credentials {
     border-width: 5px;
     border-color: black;
     border-style: inset;
     width: calc(100% - var(--form-border-width));
 }
 
-button {
+button.stretch-button {
     width: stretch;
     text-align: center;
     font-weight: bolder;
