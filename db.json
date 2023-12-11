@@ -1,6 +1,49 @@
 {
   "users": [
-    
+    {
+      "id": 1,
+      "firstName": "Andrew",
+      "lastName": "Ox",
+      "username": "andrew15",
+      "email": "andrew.ox@adnanianorder.com",
+      "password": "Chick3nNu993tz!",
+      "notes": [
+
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Beatrice",
+      "lastName": "House",
+      "username": "beatrice15",
+      "email": "beatrice.house@adnanianorder.com",
+      "password": "Phr3nchPhrie$",
+      "notes": [
+
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "George",
+      "lastName": "Camel",
+      "username": "george15",
+      "email": "george.camel@adnanianorder.com",
+      "password": "Eggstruh+Ketch-UP!#",
+      "notes": [
+
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Deborah",
+      "lastName": "Door",
+      "username": "deborah15",
+      "email": "deborah.door@adnanianorder.com",
+      "password": "&Mayonaz3:)",
+      "notes": [
+
+      ]
+    }
   ],
   "reflectionQuestions": [
     {
