@@ -18,9 +18,6 @@ function App() {
     returnToLogin: () => setLoggedOutPage("/login")
   }
 
-  //console.log(typeof loginNavigate.login);
-  console.log(loginNavigate.login);
-
   useEffect(() => {
     if (isLoggedIn) {
       navigate("/");

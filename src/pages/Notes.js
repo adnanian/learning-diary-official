@@ -37,9 +37,11 @@ function Notes() {
                 <h1>Reflection Questions</h1>
                 <table id="reflection-table">
                     <thead>
-                        <th className="reflection-table-header">#</th>
-                        <th className="reflection-table-header">Prompt</th>
-                        <th className="reflection-table-header">Type</th>
+                        <tr>
+                            <th className="reflection-table-header">#</th>
+                            <th className="reflection-table-header">Prompt</th>
+                            <th className="reflection-table-header">Type</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {tableRows}
