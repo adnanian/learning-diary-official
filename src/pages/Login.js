@@ -10,8 +10,26 @@ function Login() {
 
     function handleLogin(event) {
         event.preventDefault();
-        console.log(loginNavigate.login);
-        loginNavigate.login();
+        // Login validation will be replaced later on.
+        fetch('http://localhost:3000/users')
+            .then((response) => response.json())
+            .then((data) => {
+                let index = 0;
+                let isValidCredentials = false;
+                while (!isValidCredentials && index < data.length) {
+                    if (username === data[index].username || username === data[index].email) {
+                        if (password === data[index].password) {
+                            isValidCredentials = true;
+                        } 
+                    }
+                    index++;
+                }
+                if (isValidCredentials) {
+                    loginNavigate.login();
+                } else {
+                    alert("Invalid credentials! Please try again! :(");
+                }
+            });
     }
 
     function viewRegistrationForm() {

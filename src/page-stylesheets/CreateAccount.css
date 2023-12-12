@@ -1,0 +1,31 @@
+* {
+    --registration-form-border-width: 5px;
+}
+
+#create-account-div {
+    background-image: linear-gradient(
+        to bottom left,
+        green,
+        olive,
+        chartreuse,
+        olive,
+        green
+    );
+    left: 35%;
+    top: 10%;
+    position: absolute;
+    padding: 30px;
+    border-width: var(--registration-form-border-width);
+    border-style: double;
+    border-color: darkolivegreen;
+    width: 30%;
+}
+
+.input-line > * {
+    column-gap: 15px;
+    display: grid;
+}
+
+.registration-field {
+    width: calc(100% - var(--registration-form-border-width));
+}

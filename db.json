@@ -7,9 +7,7 @@
       "username": "andrew15",
       "email": "andrew.ox@adnanianorder.com",
       "password": "Chick3nNu993tz!",
-      "notes": [
-
-      ]
+      "notes": []
     },
     {
       "id": 2,
@@ -18,9 +16,7 @@
       "username": "beatrice15",
       "email": "beatrice.house@adnanianorder.com",
       "password": "Phr3nchPhrie$",
-      "notes": [
-
-      ]
+      "notes": []
     },
     {
       "id": 3,
@@ -29,9 +25,7 @@
       "username": "george15",
       "email": "george.camel@adnanianorder.com",
       "password": "Eggstruh+Ketch-UP!#",
-      "notes": [
-
-      ]
+      "notes": []
     },
     {
       "id": 4,
@@ -40,9 +34,16 @@
       "username": "deborah15",
       "email": "deborah.door@adnanianorder.com",
       "password": "&Mayonaz3:)",
-      "notes": [
-
-      ]
+      "notes": []
+    },
+    {
+      "firstName": "Henry",
+      "lastName": "Window",
+      "username": "henry15",
+      "email": "henry.window@adnanianorder.com",
+      "password": "SuperDab339*+",
+      "notes": [],
+      "id": 5
     }
   ],
   "reflectionQuestions": [
