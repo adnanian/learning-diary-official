@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import "../page-stylesheets/ForgotPassword.css";
 
 function ForgotPassword() {
     const [email, setEmail] = useState("");
@@ -13,18 +14,18 @@ function ForgotPassword() {
 
     return (
         <main>
-            <div>
+            <div id="forgot-password-div">
+                <h2>Enter the email address associated with the account:</h2>
                 <form id="forgot-password-form" onSubmit={handleSubmit}>
-                    <h2>Enter the email address associated with the account:</h2>
-                    <label htmlFor="email-to-contact">Email</label>
+                    <label htmlFor="email-to-contact">Email: </label>
                     <input 
                         id="email-to-contact"
                         name="email-to-contact"
                         type="text" 
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
-                    />
-                    <input type="submit"/>
+                    /><br/><br/>
+                    <input id="submit-email" type="submit"/>
                 </form>
             </div>
         </main>
