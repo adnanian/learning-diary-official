@@ -40,6 +40,15 @@ function CreateAccount() {
         loginNavigate.returnToLogin();
     }
 
+    function handleReturn() {
+        setFirstName("");
+        setLastName("");
+        setUsername("");
+        setEmail("");
+        setPassword("");
+        loginNavigate.returnToLogin();
+    }
+
     return (
         <main>
             <div id="create-account-div">
@@ -102,6 +111,7 @@ function CreateAccount() {
                     </div><br/>
                     <input type="submit" value="Register" />
                 </form>
+                <button onClick={handleReturn}>Go Back</button>
             </div>
         </main>
     );

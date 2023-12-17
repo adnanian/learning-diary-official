@@ -27,6 +27,7 @@ function ForgotPassword() {
                     /><br/><br/>
                     <input id="submit-email" type="submit"/>
                 </form>
+                <button onClick={() => loginNavigate.returnToLogin()}>Go Back</button>
             </div>
         </main>
     )
