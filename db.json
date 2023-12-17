@@ -44,6 +44,24 @@
       "password": "SuperDab339*+",
       "notes": [],
       "id": 5
+    },
+    {
+      "firstName": "Wendy",
+      "lastName": "Hook",
+      "username": "wendy15",
+      "email": "wendy.hook@adnanianorder.com",
+      "password": "Strings1234!",
+      "notes": [],
+      "id": 6
+    },
+    {
+      "firstName": "Zane",
+      "lastName": "Manacle",
+      "username": "zane15",
+      "email": "zane.manacle@adnanianorder.com",
+      "password": "C#isAw3s0me!",
+      "notes": [],
+      "id": 7
     }
   ],
   "reflectionQuestions": [

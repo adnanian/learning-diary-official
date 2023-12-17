@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import '../page-stylesheets/Login.css'
 
 function Login() {
-    const loginNavigate = useOutletContext();
+    const loginNavigate = useOutletContext().loginNavigate;
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -27,8 +27,8 @@ function Login() {
                     index++;
                 }
                 if (isValidCredentials) {
-                    loginNavigate.login();
-                    console.log(userToLogin);
+                    loginNavigate.login(userToLogin);
+                    //console.log(userToLogin);
                 } else {
                     alert("Invalid credentials! Please try again! :(");
                 }

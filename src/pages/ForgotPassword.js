@@ -4,7 +4,7 @@ import "../page-stylesheets/ForgotPassword.css";
 
 function ForgotPassword() {
     const [email, setEmail] = useState("");
-    const loginNavigate = useOutletContext();
+    const loginNavigate = useOutletContext().loginNavigate;
 
     function handleSubmit(event) {
         event.preventDefault();

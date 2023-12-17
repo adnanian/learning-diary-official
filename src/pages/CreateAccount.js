@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import "../page-stylesheets/CreateAccount.css";
 
 function CreateAccount() {
-    const loginNavigate = useOutletContext();
+    const loginNavigate = useOutletContext().loginNavigate;
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
