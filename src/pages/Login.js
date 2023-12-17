@@ -16,16 +16,18 @@ function Login() {
             .then((data) => {
                 let index = 0;
                 let isValidCredentials = false;
+                let userToLogin = null;
                 while (!isValidCredentials && index < data.length) {
                     if (username === data[index].username || username === data[index].email) {
                         if (password === data[index].password) {
                             isValidCredentials = true;
+                            userToLogin = data[index];
                         } 
                     }
                     index++;
                 }
                 if (isValidCredentials) {
-                    loginNavigate.login();
+                    loginNavigate.login(userToLogin);
                 } else {
                     alert("Invalid credentials! Please try again! :(");
                 }
