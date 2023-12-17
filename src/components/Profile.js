@@ -1,10 +1,8 @@
-import { useContext } from "react";
-import { UserContext } from "../user";
+
 
 function Profile() {
     // call useContext with our UserContext
-    const user = useContext(UserContext);
-    console.log(user);
+    const user = null;
 
     // Fill in user data to component
     if (!user) return <h2>Please Login to View Profile!</h2>
