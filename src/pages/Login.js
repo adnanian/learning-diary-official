@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useOutletContext } from "react-router-dom";
 import '../page-stylesheets/Login.css'
+import { UserContext } from "../user";
 
 function Login() {
     const loginNavigate = useOutletContext();
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const { user, setUser } = useContext(UserContext);
 
     function handleLogin(event) {
         event.preventDefault();
@@ -27,7 +29,8 @@ function Login() {
                     index++;
                 }
                 if (isValidCredentials) {
-                    loginNavigate.login(userToLogin);
+                    loginNavigate.login();
+                    setUser(userToLogin);
                 } else {
                     alert("Invalid credentials! Please try again! :(");
                 }
